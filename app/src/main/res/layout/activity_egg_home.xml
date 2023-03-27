@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EggHome"
+    android:orientation="vertical"
+    android:background="#F3DAC1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:text="666"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="250dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/money"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/show_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_layout"
+            android:onClick="onShow"
+            android:text="Show"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#DE9E59"
+            android:background="@drawable/round_btn"/>
+
+        <ImageView
+            android:id="@+id/img_egg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/egg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <Button
+            android:id="@+id/upgrade_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="270dp"
+            android:background="@drawable/round_layout"
+            android:onClick="onUpgrade"
+            android:text="upgrade"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bar_img"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bar0"/>
+
+        <Button
+            android:id="@+id/plus_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_btn"
+            android:gravity="center"
+            android:onClick="onPlus"
+            android:text="+"
+            android:textColor="#DE9E59"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

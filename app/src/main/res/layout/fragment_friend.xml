@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="650dp"
+    tools:context=".FragmentFriend">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friend_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="680dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/plus_btn"
+        android:id="@+id/add_friend_btn"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mail_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/mail" />
+
+</RelativeLayout>
